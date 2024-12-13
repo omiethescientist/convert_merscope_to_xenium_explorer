@@ -9,6 +9,7 @@ import pandas as pd
 import geopandas as gpd
 from pathlib import Path
 import geojson
+from shapely import MultiPolygon
 from typing import Union
 import argparse
 
@@ -32,7 +33,13 @@ def get_sis_polygons(path:Union[Path, str],
     else:
         geo_df = geo_df[geo_df['z_plane'] == str(float(z_plane))]
         geo_df.index = geo_df['id'].astype(str)
-    return ShapesModel.parse(geo_df[geo_df.is_valid], transformations = transformations)
+    
+    #Remove empty or non-valid geometries
+    geo_df = geo_df[(geo_df['geometry'].is_valid) & (~geo_df['geometry'].is_empty)]
+
+    # Combine Multipolygons by taking their convex hull. This might make for larger areas, but this usually represents a minority of cells.
+    geo_df['geometry'] = geo_df['geometry'].apply(lambda x: x.convex_hull if type(x) is MultiPolygon else x)
+    return ShapesModel.parse(geo_df, transformations = transformations)
 
 def main():
 
