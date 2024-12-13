@@ -1,0 +1,11 @@
+job_name: 'merscope_to_xenium'
+read:
+  merscope_input_path: null
+  segementation_polygons_path: null
+  stainings: ['DAPI']
+  image_z_layer: 3
+  polygon_z_layer: null
+
+
+
+

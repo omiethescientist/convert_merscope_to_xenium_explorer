@@ -1,0 +1,13 @@
+{
+	"version": 1,
+	"attached_datasets": [
+		{
+			"id": "3708cf88-c32c-4f7a-b5db-ee1a1fcd5dfe",
+			"mount": "Segmetnation_Results"
+		},
+		{
+			"id": "fb47f429-9446-4160-ad8a-f4c00311a9c2",
+			"mount": "1305732956"
+		}
+	]
+}
