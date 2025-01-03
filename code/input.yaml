@@ -2,9 +2,17 @@ job_name: 'merscope_to_xenium'
 read:
   merscope_input_path: null
   segementation_polygons_path: null
-  stainings: ['DAPI']
-  image_z_layer: 3
+  stainings: null
+  image_z_layer: null
   polygon_z_layer: null
+  transcript_z_layer: null
+convert:
+  image_key: null
+  shapes_key: null
+  points_key: null
+  gene_column: 'gene'
+  lazy: True
+  ram_threshold_gb: 16
 
 
 

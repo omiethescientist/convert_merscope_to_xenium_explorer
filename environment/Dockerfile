@@ -1,4 +1,4 @@
-# hash:sha256:5252308e454f108faf0208968c5353d2ffdc8a7114386b432b87687539fcf88c
+# hash:sha256:95ae120364f3902c9427a3106b17da9b56c2deaf2c2de0304f4fc25da1e482cb
 ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/py-r:python3.12.4-R4.3.3-JupyterLab4.2.4-RStudiorstudio-server-2024.04.2-764-ubuntu22.04
 
@@ -10,6 +10,7 @@ COPY git-askpass /
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+        fzf \
         libdbus-1-3=1.12.20-2ubuntu4.1 \
         libegl1=1.4.0-1 \
         libxcb-icccm4=0.4.1-1.1build2 \
