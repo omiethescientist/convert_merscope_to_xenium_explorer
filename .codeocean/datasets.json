@@ -2,8 +2,16 @@
 	"version": 1,
 	"attached_datasets": [
 		{
+			"id": "3cc84cfc-1219-43ed-a333-2d365284a45a",
+			"mount": "xenium_explorer_1"
+		},
+		{
 			"id": "480d6fa2-1a29-404f-a7f4-a190f1245349",
 			"mount": "130573295_spatialdata"
+		},
+		{
+			"id": "4a06e44c-a31c-4c90-9d1e-232de7a3fdb0",
+			"mount": "stardist2d_result"
 		}
 	]
 }

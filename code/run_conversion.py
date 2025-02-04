@@ -11,7 +11,6 @@ explorer.write(
     image_key="max_z_layers",
     shapes_key="sis_cell_polygons",
     points_key="segmented_spot_table",
-    table_key="cell_by_gene",
     gene_column="gene",
     lazy=True,
     ram_threshold_gb=16,
