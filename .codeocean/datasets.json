@@ -2,12 +2,8 @@
 	"version": 1,
 	"attached_datasets": [
 		{
-			"id": "3708cf88-c32c-4f7a-b5db-ee1a1fcd5dfe",
-			"mount": "Segmetnation_Results"
-		},
-		{
-			"id": "fb47f429-9446-4160-ad8a-f4c00311a9c2",
-			"mount": "1305732956"
+			"id": "480d6fa2-1a29-404f-a7f4-a190f1245349",
+			"mount": "130573295_spatialdata"
 		}
 	]
 }
